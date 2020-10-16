@@ -10,10 +10,26 @@ justify-content: space-between;
 display: inline-block;
 }
 .logo {
+position: relative;
 font:bold 24px/31px pt_serif,arial,helvetica,sans-serif;
-width: 190px;
-height: 35px;
-background:url("img/logo.svg");
+padding-left: 44px;
+}
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background:#0056EC;
+  border-radius: 50%;
+  opacity: .7;
+}
+.logo__circle_color_blue {
+  left: 8px;
+  top: 70%;
+  background:#C8DBFB;
+  border-radius: 50%;
 }
 .menu {
 display: flex;
@@ -30,5 +46,5 @@ margin: auto;
 width: 80%;
 }
 .main-content__title {
-font-family: PT Serif;
+font-family: Roboto;
 }
