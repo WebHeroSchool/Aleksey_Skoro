@@ -13,6 +13,7 @@ display: inline-block;
 position: relative;
 font:bold 24px/31px pt_serif,arial,helvetica,sans-serif;
 padding-left: 44px;
+font-family: 'pt_serifbold';
 }
 .logo__circle {
   position: absolute;
