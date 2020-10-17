@@ -14,6 +14,9 @@ position: relative;
 font:bold 24px/31px pt_serif,arial,helvetica,sans-serif;
 padding-left: 44px;
 font-family: 'pt_serifbold';
+font-family: 'pt_serifbold_italic';
+font-family: 'pt_serifitalic';
+font-family: 'pt_serifregular';
 }
 .logo__circle {
   position: absolute;
