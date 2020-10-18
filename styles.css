@@ -72,6 +72,9 @@ width:100%;
 margin: auto;
 width: 80%;
 }
-.main-content__title {
+.main-content__subtitle{
+font-family: Roboto;
+}
+.main-content__button {
 font-family: Roboto;
 }
