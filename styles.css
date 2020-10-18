@@ -72,6 +72,9 @@ width:100%;
 margin: auto;
 width: 80%;
 }
+.main-content__title {
+font-family: 'pt_serifbold';
+}
 .main-content__subtitle{
 font-family: Roboto;
 }
