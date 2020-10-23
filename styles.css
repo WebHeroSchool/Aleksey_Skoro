@@ -108,17 +108,19 @@ font:500px 16px/19 Roboto,helvetica,sans-serif;
 .main__button {
 font:500px 14px/16 Roboto,helvetica,sans-serif;
 }
+/* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
 }
+/* стилизуем кнопку */
 .menu__btn {
   display: flex; /* используем flex для центрирования содержимого */
   align-items: center;  /* центрируем содержимое кнопки */
   position: fixed;
   top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
+  left: 700px;
+  width: 30px;
+  height: 50px;
   cursor: pointer;
   z-index: 1;
 }
@@ -130,7 +132,7 @@ font:500px 14px/16 Roboto,helvetica,sans-serif;
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color:  #0056EC;
+  background-color:#0056EC;
 }
 .menu__btn > span::before {
   content: '';
@@ -140,6 +142,32 @@ font:500px 14px/16 Roboto,helvetica,sans-serif;
   content: '';
   top: 8px;
 }
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 400px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}ы
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
@@ -154,17 +182,5 @@ font:500px 14px/16 Roboto,helvetica,sans-serif;
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  transition-duration: .25s;
-}
-.menu__box {
-  transition-duration: .25s;
-}
-.menu__item {
-  transition-duration: .25s;
-}
 }
 }
