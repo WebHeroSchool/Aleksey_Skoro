@@ -108,14 +108,12 @@ font:500px 16px/19 Roboto,helvetica,sans-serif;
 .main__button {
 font:500px 14px/16 Roboto,helvetica,sans-serif;
 }
-/* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
 }
-/* стилизуем кнопку */
 .menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 20px;
   left: 700px;
@@ -124,7 +122,6 @@ font:500px 14px/16 Roboto,helvetica,sans-serif;
   cursor: pointer;
   z-index: 1;
 }
-/* добавляем "гамбургер" */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -144,7 +141,9 @@ font:500px 14px/16 Roboto,helvetica,sans-serif;
 }
 /* контейнер меню */
 .menu__box {
-  display: block;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
   position: fixed;
   visibility: hidden;
   top: 0;
@@ -167,7 +166,7 @@ font:500px 14px/16 Roboto,helvetica,sans-serif;
   font-size: 30px;
   font-weight: 500;
   text-decoration: none;
-}ы
+}
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
